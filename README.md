@@ -54,6 +54,7 @@ git push origin <target-branch>
 
 # or
 
+git submodule foreach 'git status || :'
 git submodule foreach git checkout <target-branch>
 git submodule foreach git push origin <target-branch>
 ```
